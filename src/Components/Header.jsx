@@ -1,7 +1,10 @@
 import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import '../styles/Header.scss';
 
 const Header = () => {
+  const isActive = window.location.href.split("/")[3];
   return (
     <div className="navbar">
       <div className="brand-logo">
@@ -11,10 +14,11 @@ const Header = () => {
         />
       </div>
       <div className="navbar-right-items">
-        <a href="/">Home</a>
-        <a href="/">Deals</a>
-        <a href="/">Orders</a>
-        <span></span>
+        <Link to="/" className={isActive=="" ? "active" : ""}>Home</Link>
+        <Link to="/deals" className={isActive=="deals" ? "active" : ""}>Deals</Link>
+        <Link to="/orders" className={isActive=="orders" ? "active" : ""}>Orders</Link>
+        <Link to="/login" className={isActive=="login" ? "active" : ""}>Log In</Link>
+        <Link to="/signup" className={isActive=="signup" ? "active" : ""}>Sign Up</Link>
       </div>
     </div>
   );

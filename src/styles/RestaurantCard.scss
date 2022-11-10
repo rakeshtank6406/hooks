@@ -1,3 +1,20 @@
-.card{
-    display: flex;
+.grid_container {
+  display: flex;
+  justify-content: center;
+  .card {
+    border: 1px solid black;
+    height: 180px;
+    width: 280px;
+    margin-right: 10px;
+    margin-left: 10px;
+    .image {
+      grid-area: "image";
+    }
+    .text {
+      grid-area: "text";
+    }
+    .stats {
+      grid-area: "stats";
+    }
+  }
 }

@@ -3,13 +3,73 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+
   img {
     height: 120px;
   }
   .navbar-right-items {
     a {
       text-decoration: none;
+      color: black;
+      margin-right: 15px;
+    }
+    a:hover {
       color: orange;
     }
+    .active {
+      color: orangered;
+    }
+  }
+}
+.deal-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    input {
+      background: #ff450091;
+      border: none;
+      margin-right: 15px;
+      padding: 5px;
+      border-radius: 17px;
+      padding-left: 20px;
+    }
+    span {
+      background-color: orangered;
+      padding: 10px 12px;
+      border-radius: 50%;
+      img {
+        height: 20px;
+      }
+    }
+  }
+}
+.category-name {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  span {
+    margin-right: 15px;
+    border: none;
+    background-color: #ff450091;
+    padding: 5px 10px;
+    border-radius: 14px;
+  }
+  span:hover {
+    color: orangered;
+  }
+}
+.image-container {
+  padding: 20px;
+  img {
+    width: 100%;
   }
 }

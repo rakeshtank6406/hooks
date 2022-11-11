@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import '../styles/Header.scss';
 
@@ -14,11 +13,11 @@ const Header = () => {
         />
       </div>
       <div className="navbar-right-items">
-        <Link to="/" className={isActive=="" ? "active" : ""}>Home</Link>
-        <Link to="/deals" className={isActive=="deals" ? "active" : ""}>Deals</Link>
-        <Link to="/orders" className={isActive=="orders" ? "active" : ""}>Orders</Link>
-        <Link to="/login" className={isActive=="login" ? "active" : ""}>Log In</Link>
-        <Link to="/signup" className={isActive=="signup" ? "active" : ""}>Sign Up</Link>
+        <Link to="/" className={isActive==="" ? "active" : ""}>Home</Link>
+        <Link to="/deals" className={isActive==="deals" ? "active" : ""}>Deals</Link>
+        <Link to="/orders" className={isActive==="orders" ? "active" : ""}>Orders</Link>
+        <Link to="/login" className={isActive==="login" ? "active" : ""}>Log In</Link>
+        <Link to="/signup" className={isActive==="signup" ? "active" : ""}>Sign Up</Link>
       </div>
     </div>
   );

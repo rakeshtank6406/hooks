@@ -1,0 +1,14 @@
+.step-card {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  .stepCard {
+    width: 180px;
+    border: 1px solid rgb(241, 132, 7);
+    border-radius: 10px;
+    padding: 15px;
+    img{
+        height: 60px;
+    }
+  }
+}

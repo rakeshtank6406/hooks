@@ -1,20 +1,101 @@
-.grid_container {
+.container {
   display: flex;
   justify-content: center;
   .card {
     border: 1px solid black;
-    height: 180px;
-    width: 280px;
-    margin-right: 10px;
-    margin-left: 10px;
+    width: 300px;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
     .image {
-      grid-area: "image";
+      padding: 10px;
+      height: 170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .star-heart {
+        display: flex;
+        justify-content: space-between;
+        .star {
+          background-color: orangered;
+          color: white;
+          padding: 6px;
+          border-radius: 6px;
+          display: flex;
+          align-items: center;
+        }
+        .heart {
+          background-color: orangered;
+          color: white;
+          padding: 10px;
+          display: flex;
+          border-radius: 20px;
+        }
+      }
+      .img-bottom {
+        display: flex;
+        justify-content: space-between;
+        .stock-time {
+          display: flex;
+          flex-direction: column;
+          .stock {
+            background-color: orangered;
+            color: white;
+            padding: 6px;
+            border-radius: 6px;
+            margin-bottom: 5px;
+            width: fit-content;
+          }
+          .time {
+            background-color: black;
+            color: white;
+            padding: 6px;
+            border-radius: 6px;
+          }
+        }
+        .text {
+          background-color: rgb(255, 134, 47);
+          color: white;
+          padding: 6px;
+          border-radius: 6px;
+          height: fit-content;
+        }
+      }
     }
     .text {
-      grid-area: "text";
-    }
-    .stats {
-      grid-area: "stats";
+      padding: 20px;
+      .name-price {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        p {
+          color: orangered;
+          font-weight: 900;
+          span {
+            background-color: lightgreen;
+            padding: 3px 7px;
+            border-radius: 7px;
+            color: green;
+          }
+        }
+        .checked-price {
+          text-decoration: line-through;
+        }
+      }
+      .address-Bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .submit-btn {
+          color: white;
+          background-color: orangered;
+          border: none;
+          padding: 7px 14px;
+          border-radius: 5px;
+        }
+      }
     }
   }
 }
